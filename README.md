@@ -51,7 +51,11 @@ __※画像をクリックするとYoutubeに移動します．__
 
 
 ### 振動子による演奏方法の提示
+目を閉じていても演奏ができるように，メロディの演奏方法を振動によって提示する機能がある．1つの接触位置センサは12個の音階を演奏できるため，それに対応して12個の振動子が取り付けられている．生成したMIDIデータを読み取り、各時間の音に対応する振動子を順に振動させる処理を行った．
+
 <div align="left" style="line-height: 0;">
   <img src="https://github.com/harukana1435/Musical-Pillow/assets/167507629/58243504-4033-4a27-abe5-37ddcbe79cf7" alt="振動子による演奏方法の提示" width="600" style="vertical-align: middle;"/>
 </div>
+
+## リポジトリの説明
 
