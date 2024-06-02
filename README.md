@@ -17,16 +17,20 @@ __※画像をクリックするとYoutubeに移動します．__
 [![使用例](https://github.com/harukana1435/Musical-Pillow/assets/167507629/3f1606ed-400d-4a34-892a-609d0109a6f2)](https://youtu.be/ACdyF-5a7Co)
 
 ## 全体構成
-![kinou2](https://github.com/harukana1435/Musical-Pillow/assets/167507629/056af9d9-2198-4aa0-8ab2-75b14338830d)
+<div align="center" style="line-height: 0;">
+  <img src="https://github.com/harukana1435/Musical-Pillow/assets/167507629/7ba6318f-c96a-4891-8905-fd069e4c9d49" alt="全体構成" width="600" style="vertical-align: middle;"/>
+</div>
 
 ## 機能
 ### 接触位置センサによる演奏
-![kinou1](https://github.com/harukana1435/Musical-Pillow/assets/167507629/53df4658-b2a9-4f73-9c97-75f979578f35)
+<div align="center" style="line-height: 0;">
+  <img src="https://github.com/harukana1435/Musical-Pillow/assets/167507629/53df4658-b2a9-4f73-9c97-75f979578f35" alt="接触位置センサによる演奏" width="600" style="vertical-align: middle;"/>
+</div>
 
 
-### JDCNetによるメロディ抽出
-![kinou3](https://github.com/harukana1435/Musical-Pillow/assets/167507629/eb142bea-1d46-4a51-8ca9-ff2352fff77f)
+### 機械学習モデルによるメロディ抽出
+![機械学習モデルによるメロディ抽出](https://github.com/harukana1435/Musical-Pillow/assets/167507629/eb142bea-1d46-4a51-8ca9-ff2352fff77f)
 
 
 ### 振動子による演奏方法の提示
-![kinou4](https://github.com/harukana1435/Musical-Pillow/assets/167507629/58243504-4033-4a27-abe5-37ddcbe79cf7)
+![振動子による演奏方法の提示](https://github.com/harukana1435/Musical-Pillow/assets/167507629/58243504-4033-4a27-abe5-37ddcbe79cf7)
