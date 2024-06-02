@@ -6,7 +6,12 @@
 - [概要](#概要)
 - [使用例](#使用例)
 - [全体構成](#全体構成)
+  - [ハードウェア](#ハードウェア)
+  - [デザイン](#デザイン)
 - [機能](#機能)
+    - [接触位置センサによる演奏](#接触位置センサによる演奏)
+    - [機械学習モデルによるメロディ抽出](#機械学習モデルによるメロディ抽出)
+    - [振動子による演奏方法の提示](#振動子による演奏方法の提示)
 - [リポジトリの説明](#リポジトリの説明)
     
 ## 概要 
@@ -17,20 +22,35 @@ __※画像をクリックするとYoutubeに移動します．__
 [![使用例](https://github.com/harukana1435/Musical-Pillow/assets/167507629/3f1606ed-400d-4a34-892a-609d0109a6f2)](https://youtu.be/ACdyF-5a7Co)
 
 ## 全体構成
-<div align="center" style="line-height: 0;">
+<div align="left" style="line-height: 0;">
   <img src="https://github.com/harukana1435/Musical-Pillow/assets/167507629/7ba6318f-c96a-4891-8905-fd069e4c9d49" alt="全体構成" width="600" style="vertical-align: middle;"/>
 </div>
 
+### ハードウェア
+楽器まくらの内部には小型コンピュータであるRaspberryPieが入っており，ハードウェアの制御を行っている．上部には，ユーザが演奏する部分である接触位置センサが取り付けられている．演奏した音はスピーカーから出力する．ユーザの顔付近にはマイクが取り付けられており，歌声を入力するときに用いる．歌声を解析した後，接触位置センサの裏側に取り付けられた振動子によって演奏方法が提示される．
+### デザイン
+全長1300mm．  
+ユーザの寝姿勢が横向きであることを想定している．具体的な姿勢としては，楽器まくらの下部を足で挟み，両手を接触位置センサ上に配置する．外側の素材はリネン，ラタンが使われており，内側にはポリエステル綿が詰められている．ハードウェアから熱が発生するため，通気性と耐熱性が高い素材を選択した．
+
+
+
 ## 機能
 ### 接触位置センサによる演奏
-<div align="center" style="line-height: 0;">
+接触位置センサは，可変抵抗器の一種である．押された位置によって抵抗の値が変わり，そのときの電圧を測定することで位置を特定することができる．楽器まくらでは１つの接触位置センサを1オクターブの楽器とみなし，押された位置に対応する高さの音をスピーカーから出力している．
+
+<div align="left" style="line-height: 0;">
   <img src="https://github.com/harukana1435/Musical-Pillow/assets/167507629/53df4658-b2a9-4f73-9c97-75f979578f35" alt="接触位置センサによる演奏" width="600" style="vertical-align: middle;"/>
 </div>
 
 
 ### 機械学習モデルによるメロディ抽出
-![機械学習モデルによるメロディ抽出](https://github.com/harukana1435/Musical-Pillow/assets/167507629/eb142bea-1d46-4a51-8ca9-ff2352fff77f)
+<div align="left" style="line-height: 0;">
+  <img src="https://github.com/harukana1435/Musical-Pillow/assets/167507629/eb142bea-1d46-4a51-8ca9-ff2352fff77f" alt="機械学習モデルによるメロディ抽出" width="600" style="vertical-align: middle;"/>
+</div>
 
 
 ### 振動子による演奏方法の提示
-![振動子による演奏方法の提示](https://github.com/harukana1435/Musical-Pillow/assets/167507629/58243504-4033-4a27-abe5-37ddcbe79cf7)
+<div align="left" style="line-height: 0;">
+  <img src="https://github.com/harukana1435/Musical-Pillow/assets/167507629/58243504-4033-4a27-abe5-37ddcbe79cf7" alt="振動子による演奏方法の提示" width="600" style="vertical-align: middle;"/>
+</div>
+
